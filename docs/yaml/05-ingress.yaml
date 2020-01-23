@@ -10,9 +10,9 @@ spec:
   tls:
   - secretName: gangway
     hosts:
-    - ${GANGWAY_HOST}
+    - gangway.sonaticket.com
   rules:
-  - host: ${GANGWAY_HOST}
+  - host: gangway.sonaticket.com
     http:
       paths:
       - backend:

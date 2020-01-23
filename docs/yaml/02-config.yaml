@@ -28,20 +28,20 @@ data:
 
     # The cluster name. Used in UI and kubectl config instructions.
     # Env var: GANGWAY_CLUSTER_NAME
-    clusterName: "${GANGWAY_CLUSTER_NAME}"
+    clusterName: "sonaticket"
 
     # OAuth2 URL to start authorization flow.
     # Env var: GANGWAY_AUTHORIZE_URL
-    authorizeURL: "https://${DNS_NAME}/authorize"
+    authorizeURL: "https://gangway.sonaticket.com/authorize"
 
     # OAuth2 URL to obtain access tokens.
     # Env var: GANGWAY_TOKEN_URL
-    tokenURL: "https://${DNS_NAME}/oauth/token"
+    tokenURL: "https://gangway.sonaticket.com/oauth/token"
 
     # Endpoint that provides user profile information [optional]. Not all providers
     # will require this.
     # Env var: GANGWAY_AUDIENCE
-    audience: "https://${DNS_NAME}/userinfo"
+    audience: "https://gangway.sonaticket.com/userinfo"
 
     # Used to specify the scope of the requested Oauth authorization.
     # scopes: ["openid", "profile", "email", "offline_access"]
@@ -50,15 +50,15 @@ data:
     # Typically this also needs to be registered as part of the oauth application
     # with the oAuth provider.
     # Env var: GANGWAY_REDIRECT_URL
-    redirectURL: "https://${GANGWAY_REDIRECT_URL}/callback"
+    redirectURL: "https://gangway.sonaticket.com/callback"
 
     # API client ID as indicated by the identity provider
     # Env var: GANGWAY_CLIENT_ID
-    clientID: "${GANGWAY_CLIENT_ID}"
+    clientID: "408924390693-sf41plu233ou39kc5jla8m8as3tjknno.apps.googleusercontent.com"
 
     # API client secret as indicated by the identity provider
     # Env var: GANGWAY_CLIENT_SECRET
-    clientSecret: "${GANGWAY_CLIENT_SECRET}"
+    clientSecret: "O31Ve2WCAh2GBTwoQRoOPLc1"
 
     # Some identity providers accept an empty client secret, this
     # is not generally considered a good idea. If you have to use an
@@ -74,7 +74,7 @@ data:
 
     # The API server endpoint used to configure kubectl
     # Env var: GANGWAY_APISERVER_URL
-    apiServerURL: "https://${GANGWAY_APISERVER_URL}"
+    apiServerURL: "https://192.168.1.109:6443"
 
     # The path to find the CA bundle for the API server. Used to configure kubectl.
     # This is typically mounted into the default location for workloads running on
@@ -88,7 +88,7 @@ data:
 
     # The path gangway uses to create urls (defaults to "")
     # Env var: GANGWAY_HTTP_PATH
-    #httpPath: "https://${GANGWAY_HTTP_PATH}"
+    #httpPath: "https://gangway.sonaticket.com"
 
     # The path to find custom HTML templates
     # Env var: GANGWAY_CUSTOM_HTTP_TEMPLATES_DIR
