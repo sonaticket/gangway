@@ -32,16 +32,16 @@ data:
 
     # OAuth2 URL to start authorization flow.
     # Env var: GANGWAY_AUTHORIZE_URL
-    authorizeURL: "https://gangway.sonaticket.com/authorize"
+    authorizeURL: "https://accounts.google.com/o/oauth2/auth"
 
     # OAuth2 URL to obtain access tokens.
     # Env var: GANGWAY_TOKEN_URL
-    tokenURL: "https://gangway.sonaticket.com/oauth/token"
+    tokenURL: "https://accounts.google.com/o/oauth2/token"
 
     # Endpoint that provides user profile information [optional]. Not all providers
     # will require this.
     # Env var: GANGWAY_AUDIENCE
-    audience: "https://gangway.sonaticket.com/userinfo"
+    audience: "408924390693-sf41plu233ou39kc5jla8m8as3tjknno.apps.googleusercontent.com"
 
     # Used to specify the scope of the requested Oauth authorization.
     # scopes: ["openid", "profile", "email", "offline_access"]
