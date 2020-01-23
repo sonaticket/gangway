@@ -74,7 +74,7 @@ data:
 
     # The API server endpoint used to configure kubectl
     # Env var: GANGWAY_APISERVER_URL
-    apiServerURL: "https://192.168.1.109:6443"
+    apiServerURL: "https://k8s.sonaticket.com"
 
     # The path to find the CA bundle for the API server. Used to configure kubectl.
     # This is typically mounted into the default location for workloads running on
