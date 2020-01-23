@@ -44,7 +44,7 @@ data:
     audience: "408924390693-sf41plu233ou39kc5jla8m8as3tjknno.apps.googleusercontent.com"
 
     # Used to specify the scope of the requested Oauth authorization.
-    # scopes: ["openid", "profile", "email", "offline_access"]
+    # scopes: ["openid", "profile", "email"]
 
     # Where to redirect back to. This should be a URL where gangway is reachable.
     # Typically this also needs to be registered as part of the oauth application
@@ -74,7 +74,7 @@ data:
 
     # The API server endpoint used to configure kubectl
     # Env var: GANGWAY_APISERVER_URL
-    apiServerURL: "https://192.168.1.109:6443"
+    apiServerURL: "https://k8s.sonaticket.com"
 
     # The path to find the CA bundle for the API server. Used to configure kubectl.
     # This is typically mounted into the default location for workloads running on
