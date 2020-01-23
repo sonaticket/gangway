@@ -44,7 +44,7 @@ data:
     audience: "408924390693-sf41plu233ou39kc5jla8m8as3tjknno.apps.googleusercontent.com"
 
     # Used to specify the scope of the requested Oauth authorization.
-    # scopes: ["openid", "profile", "email", "offline_access"]
+    scopes: ["openid", "profile", "email"]
 
     # Where to redirect back to. This should be a URL where gangway is reachable.
     # Typically this also needs to be registered as part of the oauth application
